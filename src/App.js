@@ -33,6 +33,14 @@ import Crud from './pages/Crud';
 import EmptyPage from './pages/EmptyPage';
 import TimelineDemo from './pages/TimelineDemo';
 
+/****
+ *
+ */ 
+import Signin from './faradev/auth/Signin';
+/*
+ *
+ ***/
+
 import PrimeReact from 'primereact/api';
 import { Tooltip } from 'primereact/tooltip';
 
@@ -201,7 +209,8 @@ const App = () => {
             items: [
                 { label: 'Crud', icon: 'pi pi-fw pi-user-edit', to: '/crud' },
                 { label: 'Timeline', icon: 'pi pi-fw pi-calendar', to: '/timeline' },
-                { label: 'Empty', icon: 'pi pi-fw pi-circle-off', to: '/empty' }
+                { label: 'Empty', icon: 'pi pi-fw pi-circle-off', to: '/empty' },
+                { label: 'Sigin', icon: 'pi pi-fw pi-circle-off', to: '/signin' }
             ]
         },
         {
@@ -318,6 +327,7 @@ const App = () => {
                     <Route path="/timeline" component={TimelineDemo} />
                     <Route path="/crud" component={Crud} />
                     <Route path="/empty" component={EmptyPage} />
+                    <Route path="/signin" component={Signin} />
                     <Route path="/documentation" component={Documentation} />
                 </div>
 

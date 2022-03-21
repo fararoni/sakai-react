@@ -45,7 +45,7 @@ const TimelineDemo = () => {
     return <div className="grid timeline-demo">
         <div className="col-12">
             <div className="card">
-                <h4>Timeline</h4>
+                <h4>Timeline.</h4>
 
                 <h5>Custom Timeline</h5>
                 <Timeline value={customEvents} align="alternate" className="customized-timeline" marker={customizedMarker} content={customizedContent} />

@@ -5,11 +5,16 @@ import App from './App';
 //import * as serviceWorker from './serviceWorker';
 import { HashRouter } from 'react-router-dom'
 import ScrollToTop from './ScrollToTop';
+import AppRoutes    from './faradev/routing/AppRoutes'
+/*
 
+
+ <App></App>
+*/
 ReactDOM.render(
     <HashRouter>
         <ScrollToTop>
-            <App></App>
+           Hola
         </ScrollToTop>
     </HashRouter>,
     document.getElementById('root')
